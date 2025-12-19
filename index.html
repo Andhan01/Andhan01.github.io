@@ -96,12 +96,32 @@
     .section-item {
       margin-bottom: 1em;
     }
-
+    /* ===== outer centered canvas ===== */
+    .outer {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 0 60px;   /* 控制左右留白的“空气感” */
+      box-sizing: border-box;
+    }
+    
+    /* ===== inner page ===== */
+    .page {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      max-width: 1100px;   /* ← 关键：限制整体宽度 */
+      background: #fff;
+    }
   </style>
 </head>
 
-<body>
 
+
+
+
+<body>
+<div class="outer">
 <div class="page">
 
   <!-- ===== LEFT: BASIC INFO ===== -->
@@ -229,12 +249,17 @@ I am also interested in large-scale optimization, data science, machine learning
   </li>
 </ul>
 
-
 <hr>
 <p class="small">
 Last updated:
 <script>document.write(new Date().toISOString().slice(0,10))</script>
 </p>
+
+    
+    </main>
+
+  </div>
+</div>
 
 </body>
 </html>

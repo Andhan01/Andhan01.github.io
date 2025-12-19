@@ -1,11 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Andhan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- MathJax for equations -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    body {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: "Times New Roman", Times, serif;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+    }
+    h1, h2, h3 {
+      font-weight: normal;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 0.2em;
+    }
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+      margin-top: 2em;
+    }
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .contact {
+      text-align: right;
+      font-size: 0.95em;
+    }
+    .contact a {
+      display: block;
+    }
+    .small {
+      color: #444;
+      font-size: 0.95em;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello!</h1>
-  <p>This is my GitHub Pages website.</p>
+
+<div class="header">
+  <div>
+    <h1>Andhan</h1>
+    <div class="small">
+      PhD Student / Researcher<br>
+      Optimization · Reinforcement Learning
+    </div>
+  </div>
+  <div class="contact">
+    <a href="mailto:your_email@domain.com">your_email@domain.com</a>
+    <a href="https://github.com/Andhan01">GitHub</a>
+    <a href="#">Google Scholar</a>
+    <a href="#">CV (PDF)</a>
+  </div>
+</div>
+
+<h2>About</h2>
+<p>
+I am a researcher interested in stochastic optimization, reinforcement learning,
+and actor--critic methods. My current work focuses on bridging theoretical
+sample-complexity analysis with practical deep RL algorithms.
+</p>
+
+<h2>Research Interests</h2>
+<ul>
+  <li>Deterministic and stochastic actor--critic methods</li>
+  <li>Sample complexity and stability in reinforcement learning</li>
+  <li>Set-valued optimization and multi-objective RL</li>
+</ul>
+
+<h2>Publications & Preprints</h2>
+<ul>
+  <li>
+    <b>Title of Paper</b><br>
+    Author names. <i>Conference / Journal</i>, year.
+    [<a href="#">pdf</a>]
+  </li>
+</ul>
+
+<h2>Projects</h2>
+<ul>
+  <li>
+    <b>NAC-DD → DDPG / TD3 Two-Stage RL</b><br>
+    A two-stage framework combining theoretically motivated NAC-DD warm-up
+    with off-policy deterministic actor--critic training.
+    [<a href="#">code</a>]
+  </li>
+</ul>
+
+<h2>Teaching</h2>
+<ul>
+  <li>Teaching Assistant, Course Name, Year</li>
+</ul>
+
+<h2>Notes</h2>
+<p>
+You can typeset mathematics using LaTeX syntax, for example:
+</p>
+
+$$
+\min_\pi \; \mathbb{E}\!\left[ \sum_{t=0}^\infty \gamma^t r(s_t, a_t) \right].
+$$
+
+<hr>
+
+<p class="small">
+Last updated: <script>document.write(new Date().toISOString().slice(0,10))</script>
+</p>
+
 </body>
 </html>

@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Andhan</title>
+  <title>Xiuqi Han</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- MathJax for equations -->
+  <!-- MathJax -->
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <style>
@@ -16,19 +16,20 @@
       font-family: "Times New Roman", Times, serif;
       line-height: 1.6;
       color: #111;
-      background: #fff;
-    }
-    h1, h2, h3 {
-      font-weight: normal;
     }
     h1 {
-      font-size: 2.2em;
-      margin-bottom: 0.2em;
+      font-size: 2.4em;
+      margin-bottom: 0.1em;
     }
     h2 {
+      margin-top: 2em;
       border-bottom: 1px solid #ccc;
       padding-bottom: 4px;
-      margin-top: 2em;
+      font-weight: normal;
+    }
+    h3 {
+      font-weight: normal;
+      margin-bottom: 0.2em;
     }
     a {
       color: #0645ad;
@@ -43,7 +44,6 @@
     .header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
       flex-wrap: wrap;
     }
     .contact {
@@ -57,78 +57,203 @@
       color: #444;
       font-size: 0.95em;
     }
+    .section-item {
+      margin-bottom: 1em;
+    }
   </style>
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
+
 <div class="header">
   <div>
-    <h1>Andhan</h1>
+    <h1>Xiuqi Han</h1>
     <div class="small">
-      PhD Student / Researcher<br>
-      Optimization · Reinforcement Learning
+      Ph.D. Student, Operations Research<br>
+      Edwardson School of Industrial Engineering, Purdue University
     </div>
   </div>
   <div class="contact">
-    <a href="mailto:your_email@domain.com">your_email@domain.com</a>
+    <a href="mailto:han870@purdue.edu">han870@purdue.edu</a>
+    <div>West Lafayette, IN</div>
     <a href="https://github.com/Andhan01">GitHub</a>
     <a href="#">Google Scholar</a>
     <a href="#">CV (PDF)</a>
   </div>
 </div>
 
+<!-- ================= ABOUT ================= -->
+
 <h2>About</h2>
 <p>
-I am a researcher interested in stochastic optimization, reinforcement learning,
-and actor--critic methods. My current work focuses on bridging theoretical
-sample-complexity analysis with practical deep RL algorithms.
+I am a Ph.D. student in Operations Research at Purdue University, advised by
+Prof. Susan R. Hunter. My research focuses on stochastic optimization,
+set-valued optimization, and the theoretical foundations of multi-stage
+multi-objective decision-making, with additional interests in reinforcement
+learning and statistical simulation.
 </p>
+
+<!-- ================= RESEARCH INTERESTS ================= -->
 
 <h2>Research Interests</h2>
 <ul>
-  <li>Deterministic and stochastic actor--critic methods</li>
-  <li>Sample complexity and stability in reinforcement learning</li>
-  <li>Set-valued optimization and multi-objective RL</li>
+  <li>Large-scale and stochastic optimization</li>
+  <li>Set-valued and multi-objective optimization</li>
+  <li>Statistical simulation and empirical process theory</li>
+  <li>Reinforcement learning and actor–critic methods</li>
 </ul>
 
-<h2>Publications & Preprints</h2>
+<!-- ================= EDUCATION ================= -->
+
+<h2>Education</h2>
+
+<div class="section-item">
+  <b>Purdue University</b>, West Lafayette, IN<br>
+  Ph.D. in Operations Research, Edwardson School of Industrial Engineering<br>
+  <span class="small">Aug 2025 – Present</span><br>
+  Advisor: Prof. Susan R. Hunter
+</div>
+
+<div class="section-item">
+  <b>Purdue University</b>, West Lafayette, IN<br>
+  M.S. in Statistics and Computer Science, Department of Statistics<br>
+  <span class="small">Aug 2024 – Present</span>
+</div>
+
+<div class="section-item">
+  <b>Shanghai University of Finance and Economics (SUFE)</b>, Shanghai, China<br>
+  B.Ec. in Economic Statistics, School of Statistics<br>
+  B.Eng. (Minor) in Computer Science, School of Information Management & Engineering<br>
+  <span class="small">Sep 2020 – Jun 2024</span>
+</div>
+
+<!-- ================= PUBLICATIONS ================= -->
+
+<h2>Publications</h2>
 <ul>
   <li>
-    <b>Title of Paper</b><br>
-    Author names. <i>Conference / Journal</i>, year.
-    [<a href="#">pdf</a>]
+    S. R. Hunter’s Group.<br>
+    <i>Multi-stage Multi-objective Stochastic Programming via Stochastic Set Optimization.</i><br>
+    Manuscript in preparation.
   </li>
 </ul>
 
-<h2>Projects</h2>
+<!-- ================= RESEARCH EXPERIENCE ================= -->
+
+<h2>Research Experience</h2>
+
+<div class="section-item">
+  <b>Stochastic Set-valued Optimization (SSO)</b><br>
+  Research Assistant, School of Industrial Engineering, Purdue University<br>
+  <span class="small">Jan 2025 – Present</span>
+  <ul>
+    <li>
+      Developing theoretical foundations for two-stage and multi-stage stochastic
+      multi-objective optimization (TSSMOO/MSSMOO), including measurability and
+      integrability of set-valued objectives.
+    </li>
+    <li>
+      Establishing equivalence between multi-stage multi-objective optimization and
+      set-valued optimization, and constructing Sample Average Approximation (SAA)
+      procedures.
+    </li>
+    <li>
+      Extending probabilistic lower bounds of SAA to multidimensional settings using
+      geometric and stochastic process tools (e.g., Hausdorff distance).
+    </li>
+    <li>
+      Additional exploration: Benson’s geometrical duality, Benders decomposition,
+      cutting-plane methods, and Mordukhovich derivatives.
+    </li>
+  </ul>
+</div>
+
+<div class="section-item">
+  <b>Two-phase Training Actor–Critic Reinforcement Learning</b><br>
+  Course Project, Department of Computer Science, Purdue University<br>
+  <span class="small">Oct 2025 – Present</span>
+  <ul>
+    <li>
+      Investigating sampling correlation and complexity in Markov process settings,
+      analyzing training dynamics of actor–critic algorithms.
+    </li>
+    <li>
+      Implementing on-policy warm-up followed by off-policy main training for
+      deterministic actor–critic methods.
+    </li>
+  </ul>
+</div>
+
+<div class="section-item">
+  <b>Manifold Optimization for the Thomson Problem</b><br>
+  Course Project, Department of Computer Science, Purdue University<br>
+  <span class="small">Mar 2025 – May 2025</span>
+  <ul>
+    <li>
+      Re-derived gradient-based optimizers for Coulomb energy on the sphere and
+      analyzed gradient vanishing phenomena using Riemannian optimization.
+    </li>
+  </ul>
+</div>
+
+<div class="section-item">
+  <b>Quantile Regression under Non-linear Models</b><br>
+  Bachelor’s Thesis, SUFE<br>
+  <span class="small">Dec 2023 – Apr 2024</span>
+  <ul>
+    <li>
+      Approximated pinball loss using differentiable Huber loss and conducted
+      experiments with XGBoost and neural networks.
+    </li>
+  </ul>
+</div>
+
+<div class="section-item">
+  <b>Time Series Transformers</b><br>
+  Bachelor’s Thesis, SUFE<br>
+  <span class="small">Jan 2024 – May 2024</span>
+  <ul>
+    <li>
+      Analyzed Transformer architectures at the source-code level and visualized
+      temporal patterns learned by models.
+    </li>
+  </ul>
+</div>
+
+<!-- ================= TEACHING ================= -->
+
+<h2>Teaching Experience</h2>
 <ul>
   <li>
-    <b>NAC-DD → DDPG / TD3 Two-Stage RL</b><br>
-    A two-stage framework combining theoretically motivated NAC-DD warm-up
-    with off-policy deterministic actor--critic training.
-    [<a href="#">code</a>]
+    <b>STAT 513: Quality Control</b>, Purdue University<br>
+    Teaching Assistant, Jul 2025 – Aug 2025
   </li>
 </ul>
 
-<h2>Teaching</h2>
+<!-- ================= COURSES ================= -->
+
+<h2>Selected Coursework</h2>
 <ul>
-  <li>Teaching Assistant, Course Name, Year</li>
+  <li>Computational Methods in Optimization (CS520, Purdue)</li>
+  <li>Real Analysis and Measure Theory (MA544, Purdue)</li>
+  <li>Mathematical Statistics (STAT528, Purdue)</li>
+  <li>Reinforcement Learning (CS593, Purdue)</li>
+  <li>Deep Learning, Machine Learning, Time Series Analysis (SUFE)</li>
 </ul>
 
-<h2>Notes</h2>
-<p>
-You can typeset mathematics using LaTeX syntax, for example:
-</p>
-
-$$
-\min_\pi \; \mathbb{E}\!\left[ \sum_{t=0}^\infty \gamma^t r(s_t, a_t) \right].
-$$
+<h3>Planned Coursework</h3>
+<ul>
+  <li>Operating Systems (CS503, Purdue, Spring 2026)</li>
+  <li>Compiling and Programming Systems (CS502, Purdue, Spring 2026)</li>
+  <li>Distributed Systems (CS505, Purdue, Fall 2026)</li>
+</ul>
 
 <hr>
-
 <p class="small">
-Last updated: <script>document.write(new Date().toISOString().slice(0,10))</script>
+Last updated:
+<script>document.write(new Date().toISOString().slice(0,10))</script>
 </p>
 
 </body>

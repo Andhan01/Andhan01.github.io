@@ -103,6 +103,16 @@
       padding: 0 60px;   /* 控制左右留白的“空气感” */
       box-sizing: border-box;
     }
+    .profile-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    }
+    .header-left {
+      max-width: 600px;
+    }
     
     /* ===== inner page ===== */
     .page {
@@ -127,7 +137,15 @@
   <aside class="sidebar">
 
     <div class="header">
-      <div>
+      <!-- <div>
+        <h1>Xiuqi Han</h1>
+        <div class="small">
+          Ph.D. Student, Operations Research<br>
+          Edwardson School of Industrial Engineering, Purdue University
+        </div>
+      </div> -->
+      <div class="header-left">
+        <img src="forweb.jpg" alt="Xiuqi Han" class="profile-photo">
         <h1>Xiuqi Han</h1>
         <div class="small">
           Ph.D. Student, Operations Research<br>
@@ -147,8 +165,6 @@
 
   <!-- ===== RIGHT: SCROLLABLE CONTENT ===== -->
   <main class="content">
-
-    <!-- 从 About 开始，下面内容一字不改 -->
 
 <!-- ================= ABOUT ================= -->
 
@@ -279,7 +295,7 @@ I also have experience across the following industries.
 <ul>
   <li>
     <b>STAT 513: Quality Control</b>, Purdue University<br>
-    <i>Teaching Assistant</i>, <span class="small">(Jul 2025 – Aug 2025)</span>
+    <i>Teaching Assistant</i> <span class="small">(Jul 2025 – Aug 2025)</span>
   </li>
 </ul>
 
